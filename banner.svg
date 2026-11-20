@@ -1,0 +1,73 @@
+<svg width="850" height="170" viewBox="0 0 850 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="warmBg" x1="0" y1="0" x2="850" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1C1917" />
+      <stop offset="55%" stop-color="#78350F" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="vinylSheen" x1="30" y1="20" x2="160" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.18" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.12" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .quote {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-style: italic;
+      font-size: 21px;
+      fill: #FEF3C7;
+      opacity: 0;
+      animation: fadeQuote 35s infinite;
+    }
+    .q1 { animation-delay: 0s; }
+    .q2 { animation-delay: 5s; }
+    .q3 { animation-delay: 10s; }
+    .q4 { animation-delay: 15s; }
+    .q5 { animation-delay: 20s; }
+    .q6 { animation-delay: 25s; }
+    .q7 { animation-delay: 30s; }
+
+    @keyframes fadeQuote {
+      0% { opacity: 0; transform: translateY(5px); }
+      2.14% { opacity: 1; transform: translateY(0px); }
+      12.14% { opacity: 1; transform: translateY(0px); }
+      14.29% { opacity: 0; transform: translateY(-5px); }
+      100% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Sfondo -->
+  <rect width="850" height="170" rx="12" fill="url(#warmBg)" />
+
+  <!-- Vinile rotante -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" from="0 95 85" to="360 95 85" dur="4.5s" repeatCount="indefinite" />
+    <!-- Disco -->
+    <circle cx="95" cy="85" r="62" fill="#12100E" stroke="#292524" stroke-width="2" />
+    <!-- Solchi -->
+    <circle cx="95" cy="85" r="52" stroke="#292524" stroke-width="1" />
+    <circle cx="95" cy="85" r="43" stroke="#292524" stroke-width="1" />
+    <circle cx="95" cy="85" r="34" stroke="#292524" stroke-width="1" />
+    <!-- Riflesso luce sul vinile per rendere visibile la rotazione -->
+    <path d="M95 23 A62 62 0 0 1 157 85 L95 85 Z" fill="url(#vinylSheen)" />
+    <path d="M95 147 A62 62 0 0 1 33 85 L95 85 Z" fill="url(#vinylSheen)" />
+    <!-- Etichetta centrale -->
+    <circle cx="95" cy="85" r="21" fill="#D97706" />
+    <circle cx="95" cy="85" r="18" stroke="#FEF3C7" stroke-width="0.8" stroke-dasharray="3 2" />
+    <!-- Tacca bianca sull'etichetta -->
+    <circle cx="95" cy="72" r="2" fill="#FEF3C7" />
+    <!-- Foro centrale -->
+    <circle cx="95" cy="85" r="4.5" fill="#1C1917" />
+  </g>
+
+  <!-- Frasi delle canzoni -->
+  <text x="190" y="92" class="quote q1">«Mi fido di te, cosa sei disposto a perdere?»</text>
+  <text x="190" y="92" class="quote q2">«E guidare come un pazzo a fari spenti nella notte...»</text>
+  <text x="190" y="92" class="quote q3">«Perché la vita è un brivido che vola via...»</text>
+  <text x="190" y="92" class="quote q4">«Aida, la costituente - La democrazia e chi ce l'ha»</text>
+  <text x="190" y="92" class="quote q5">«Vorrei girare il cielo come le rondini»</text>
+  <text x="190" y="92" class="quote q6">«Ma s'io avessi previsto tutto questo, dati causa e pretesto...»</text>
+  <text x="190" y="92" class="quote q7">«Cosa sarà che ti strappa dal sogno...»</text>
+</svg>
